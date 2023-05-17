@@ -1,0 +1,82 @@
+<html>
+
+<head>
+<title>
+Registration Form 2.0
+</title>
+<style type="text/css">
+form{
+	font-family: "Arial";
+	border:2px red solid;
+	border-radius:20px;
+	margin:15px;
+	padding:15px;
+}
+
+label, input, select{
+	border-radius :20px;
+	width:125px;
+	margin:5px;
+	padding:5px;
+}
+input {
+	border:2px green solid;	
+}
+
+select {
+	border:2px cyan solid;
+}
+#sub, #reset{
+	border:2px cyan solid;
+}
+
+</style>
+</head>
+<body>
+
+<form action="main">
+
+<h1 id="heading">Registration Form</h1>
+
+<label id="name_l">Name : </label>
+<input name="name_i" type=text placeholder="Your Name" required="required" pattern="[Aa-Bb] [Aa-Bb]"><br>
+<label id="roll_l">Roll : </label>
+<input name="roll_i" type=number min=1 placeholder="Your Roll" required="required"><br>
+<label id="marks_l">Marks : </label>
+<input name="marks_i" type=number min=1 max=100 placeholder="Class 10" required="required">
+<input name="marks_i" type=number min=1 max=100 placeholder="Class 12" required="required">
+<input name="marks_i" type=number min=1 max=100 placeholder="Graduations" required="required"><br>
+<label id="phno_l">Phone Number : </label>
+<input name="phno_i" type=number pattern="[0-9]{5}[0-9]{5}" placeholder="Format:012345678" required="required"><br>
+<label id="email_l">Email : </label>
+<input name="email_i" type=email><br>
+
+<label id="add_l">Address : </label>
+<input name="add_i" type=text><br>
+
+<label id="gender_l">Gender : </label>
+<select name="gender_i">
+<option value="male">Male</option>
+<option value="female">Female</option>
+<option value="other">Other</option>
+</select><br>
+
+<label id="course_l">Course : </label>
+<select name="course_i">
+
+<option value="java_advanced"> Java Advanced</option>
+<option value="java_intermideate"> Java Intermediate</option>
+<option value="java_basic"> Java Basic</option>
+
+<option value="python_advanced"> Python Advanced</option>
+<option value="python_intermediate"> Python Intermediate</option>
+<option value="python_basic"> Python Basic</option>
+</select><br>
+<input id="sub" type="submit">
+<input id="reset" type="reset">
+
+</form>
+
+</body>
+
+</html>
